@@ -1,5 +1,4 @@
 #
-%include	/usr/lib/rpm/macros.mono
 #
 Summary:	.NET bindings for GTK+ API not included in GTK#
 Summary(pl.UTF-8):	Wiązania GTK+ API nie włączonego do GTK# dla .NET
