@@ -4,7 +4,7 @@ Summary:	.NET bindings for GTK+ API not included in GTK#
 Summary(pl.UTF-8):	Wiązania GTK+ API nie włączonego do GTK# dla .NET
 Name:		dotnet-gtk-sharp-beans
 Version:	2.14.0
-Release:	1
+Release:	2
 License:	LGPL v2.1
 Group:		Libraries
 Source0:	gtk-sharp-beans-%{version}.tar.gz
