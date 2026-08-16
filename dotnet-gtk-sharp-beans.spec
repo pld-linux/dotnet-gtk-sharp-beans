@@ -1,14 +1,17 @@
 #
+# managed dotnet code, no native debug sources
+%undefine	_debugsource_packages
 #
 Summary:	.NET bindings for GTK+ API not included in GTK#
 Summary(pl.UTF-8):	Wiązania GTK+ API nie włączonego do GTK# dla .NET
 Name:		dotnet-gtk-sharp-beans
 Version:	2.14.0
-Release:	2
+Release:	3
 License:	LGPL v2.1
 Group:		Libraries
 Source0:	gtk-sharp-beans-%{version}.tar.gz
 # Source0-md5:	7ad55e25b0338927dcb501445f847450
+Patch0:		%{name}-mcs.patch
 URL:		http://github.com/mono/gtk-sharp-beans/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -44,6 +47,7 @@ Pliki programistyczne GTK#Beans.
 
 %prep
 %setup -q -n mono-gtk-sharp-beans-19023b6/
+%patch -P0 -p1
 
 %build
 mkdir config

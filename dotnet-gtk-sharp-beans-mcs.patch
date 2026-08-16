@@ -1,0 +1,16 @@
+Look for mcs instead of gmcs.
+
+mono 6.x dropped gmcs together with the 2.0 profile; mcs is the only C#
+compiler it ships.
+
+--- mono-gtk-sharp-beans-19023b6/configure.ac.orig
++++ mono-gtk-sharp-beans-19023b6/configure.ac
+@@ -8,7 +8,7 @@
+ PACKAGE_VERSION=gtk-sharp-beans-2.0
+ AC_SUBST(PACKAGE_VERSION)
+ 
+-AC_PATH_PROG(CSC, gmcs)
++AC_PATH_PROG(CSC, mcs)
+ AC_PATH_PROG(GACUTIL, gacutil, no)
+ if test "x$GACUTIL" = "xno" ; then
+ 	AC_MSG_ERROR([No gacutil tool found, You need to install either the mono or .Net SDL.])
